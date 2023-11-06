@@ -214,10 +214,6 @@ hr{
 
 
 .first-description{
-    display: flex;
-    align-self: center;
-    align-items: flex-start;
-    width: 100%;
     max-width: 500px;
 }
 
@@ -273,8 +269,14 @@ hr{
     color: #000 !important;
 }
 
+.first-image{
+    display: flex;
+}
+
 .first-image img{
-    display: none;
+    width: 100%;
+    height: 100%;
+    max-width: 553px;
 }
 
 .content-second{
@@ -423,11 +425,8 @@ section{
     }
 
     .first-description{
-        flex-direction: column;
         padding: 36px 0px;
     }
-
-    
 
     .content-second{
         width: 100%;
