@@ -479,6 +479,15 @@ section{
 }
 
 @media(min-width:692px){
+    .content-second-wrapper{
+        flex-direction: row;
+        justify-content:flex-start;
+    }
+    
+    .content-second-item{
+        max-width: 334px;
+        flex-direction: row;
+    }
     .section-cards{
         display: flex;
     }
