@@ -478,14 +478,25 @@ section{
 
 }
 
-@media(min-width:692px){
+@media(min-width:691px){
+    .first-description{
+        max-width: inherit;
+        padding: 28px 16px;
+    }
+
+    .heading{
+        font-size: 32px;
+        font-weight: 700;
+    }
+
     .content-second-wrapper{
         flex-direction: row;
         justify-content:flex-start;
+        flex-wrap: wrap;
     }
-    
+
     .content-second-item{
-        max-width: 334px;
+        max-width: 332px;
         flex-direction: row;
     }
     .section-cards{
