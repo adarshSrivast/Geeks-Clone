@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <title>Assignment</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!--image logo link-->
+            <a class="navbar-logo" href="https://geeks.madrasthemes.com/"><img width="112" height="29" src="https://geeks.madrasthemes.com/wp-content/uploads/2021/09/logo.svg" alt="Geeks"></a>
+
+            <!--collapsable navbar-->
+            <div class="navbar-collapse">
+                <!--navbar menu links-->
+                <ul class="navbar-menu">
+                    <li class="navbar-menu-dropdown">
+                        <a href="#">
+                            <span>Browse</span>
+                            <span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </a>
+                        <ul class="dropdown-items">
+                            <li class="dropdown-items-list dropdown-has-children">
+                                <a class="dropdown-link" href=""><span>Web Development</span></a>
+                                <ul class="dropdown-submenu">
+                                    <li><a class="dropdown-link" href=""><span>Bootstrap</span></a></li>
+                                    <li><a class="dropdown-link" href=""><span>React</span></a></li>
+                                    <li><a class="dropdown-link" href=""><span>Graph QL</span></a></li>
+                                    <li><a class="dropdown-link" href=""><span>Gatsby</span></a></li>
+                                    <li><a class="dropdown-link" href=""><span>Grunt</span></a></li>
+                                    <li><a class="dropdown-link" href=""><span>Svelte</span></a></li>
+                                    <li><a class="dropdown-link" href=""><span>Meteor</span></a></li>
+                                    <li><a class="dropdown-link" href=""><span>HTML5</span></a></li>
+                                    <li><a class="dropdown-link" href=""><span>Angular</span></a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="dropdown-items-list dropdown-has-children">
+                                <a class="dropdown-link" href=""><span>Design</span></a>
+                                <ul class="dropdown-submenu">
+                                    <li><a class="dropdown-link" href=""><span>UX/UI Design</span></a></li>
+                                    <li><a class="dropdown-link" href=""><span>Figma Design</span></a></li>
+                                    <li><a class="dropdown-link" href=""><span>Adobe XD</span></a></li>
+                                    <li><a class="dropdown-link" href=""><span>Sketch</span></a></li>
+                                    <li><a class="dropdown-link" href=""><span>Icon Design</span></a></li>
+                                    <li><a class="dropdown-link" href=""><span>Photoshop</span></a></li>
+                                </ul> 
+                            </li>
+
+                            <li class="dropdown-items-list">
+                                <a class="dropdown-link" href=""><span>Mobile App</span></a>
+                            </li>
+                            <li class="dropdown-items-list">
+                                <a class="dropdown-link"href=""><span>IT Software</span></a>
+                            </li>
+                            <li class="dropdown-items-list ">
+                                <a class="dropdown-link"href=""><span>Marketing</span></a>
+                            </li>
+                            <li class="dropdown-items-list ">
+                                <a class="dropdown-link" href=""><span>Music</span></a>
+                            </li>
+                            <li class="dropdown-items-list ">
+                                <a class="dropdown-link"href=""><span>Lifestyle</span></a>
+                            </li>
+                            <li class="dropdown-items-list ">
+                                <a class="dropdown-link"href=""><span>Business</span></a>
+                            </li>
+                            <li class="dropdown-items-list ">
+                                <a class="dropdown-link"href=""><span>Photography</span></a>
+                            </li>
+                        </ul> 
+                    </li>
+
+                    <li class="navbar-menu-dropdown">
+                        <a href="#">
+                            <span>Landings</span>
+                            <span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </a>
+                        <ul class="dropdown-items">
+                            <li>
+                                <h4 class="dropdown-header">LANDINGS</h4>
+                            </li>
+                            <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Courses</span></a></li>
+                            <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Lead Course</span></a></li>
+                            <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Request Access</span></a></li>
+                            <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>SaaS</span></a></li>
+                            <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Home Academy</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navbar-menu-dropdown">
+                        <a href="#">
+                            <span>Pages</span>
+                            <span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </a>
+                        <ul class="dropdown-items">
+                            <li class="dropdown-items-list dropdown-has-children" >
+                                <a class="dropdown-link"href=""><span>Courses</span></a>
+                                <ul class="dropdown-submenu">
+                                    <li><a class="dropdown-link"href=""><span>Courses List/Grid</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Course Category</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Course Single</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Course SIngle v2</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Course Lesson</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Course Checkout</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-items-list dropdown-has-children">
+                                <a class="dropdown-link"href=""><span>Paths</span></a>
+                                <ul class="dropdown-submenu">
+                                    <li><a class="dropdown-link"href=""><span>Browse Paths</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Path Single</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-items-list dropdown-has-children">
+                                <a class="dropdown-link"href=""><span>Blog</span></a>
+                                <ul class="dropdown-submenu">
+                                    <li><a class="dropdown-link"href=""><span>Listing</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Article</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Category</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Sidebar</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-items-list dropdown-has-children">
+                                <a class="dropdown-link"href=""><span>Careeer</span></a>
+                                <ul class="dropdown-submenu">
+                                    <li><a class="dropdown-link"href=""><span>Overiew</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Listing</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Opening</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-items-list dropdown-has-children">
+                                <a class="dropdown-link"href=""><span>Speciality</span></a>
+                                <ul class="dropdown-submenu">
+                                    <li><a class="dropdown-link"href=""><span>Coming Soon</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Error 404</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Maintenance Mode</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Terms & Conditions</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>About</span></a></li>
+                            <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Help Center</span></a></li>
+                            <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Pricing</span></a></li>
+                            <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Compare Plan</span></a></li>
+                            <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Contact</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navbar-menu-dropdown">
+                        <a href="#">
+                            <span>Accounts</span>
+                            <span>
+                                <i class="fa-solid fa-angle-down"></i>
+                            </span>
+                        </a>
+                        <ul class="dropdown-items">
+                            <li class="dropdown-items-list">
+                                <h4 class="dropdown-header">ACCOUNTS</h4>
+                            </li>
+                            <li class="dropdown-items-list dropdown-has-children">
+                                <a class="dropdown-link"href=""><span>Instructor</span></a>
+                                <ul class="dropdown-submenu">
+                                    <li>
+                                        <h4 class="dropdown-header"><span>INSTRUCTOR</span></h4>
+                                        <p class="dropdown-text">Instructor dashboard for manage courses and earning.</p>
+                                    </li>
+                                    <li class="dropdown-items-list"><hr class="dropdown-divider"></li>
+                                    <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Dashboard</span></a></li>
+                                    <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Profile</span></a></li>
+                                    <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>My Courses</span></a></li>
+                                    <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Announcements</span></a></li>
+                                    <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Withdrawls</span></a></li>
+                                    <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Reviews</span></a></li>
+                                    <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Question & Answer</span></a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-items-list dropdown-has-children">
+                                <a class="dropdown-link"href=""><span>Student</span></a>
+                                <ul class="dropdown-submenu">
+                                    <li>
+                                        <h4 class="dropdown-header"><span>STUDENTS</span></h4>
+                                        <p class="dropdown-text">Students dashboard to manage your courses and subscriptions</p>
+                                    </li>
+                                    <li class="dropdown-items-list"><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-link"href=""><span>Dashboard</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Enrolled Courses</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Wishlist</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Reviews</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Quiz Attempts</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Purchase History</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Payment Methods</span></a></li>
+                                    <li><a class="dropdown-link"href=""><span>Edit Addresses</Address></span></a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-items-list dropdown-has-children">
+                                <a class="dropdown-link"href=""><span>Admin</span></a>
+                                <ul class="dropdown-submenu">
+                                    <li>
+                                        <h4 class="dropdown-header"> WP Admin</h4>
+                                        <p class="dropdown-text">WP admin dashboard to manage courses, user, site setting</p>
+                                    </li>
+                                    <li class="dropdown-items-list"><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-link"href=""><span>WP Admin Dashboard</span></a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown-items-list"><hr></li>
+                            <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Sign In</span></a></li>
+                            <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Sign Up</span></a></li>
+                            <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Lost Password</span></a></li>
+                            <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Edit Profile</span></a></li>
+                            <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Security</span></a></li>
+                            <li class="dropdown-items-list"><a class="dropdown-link"href=""><span>Account Details</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="navbar-menu-dropdown">
+                        <a href="#">
+                            <span>
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </span>
+                        </a>
+                        <ul class="dropdown-items">
+                            <li class="dropdown-items-list">
+                                <a class="dropdown-link"href="">
+                                    <span>Documnetation</span>
+                                    <span>Browse the full documentation</span>
+                                </a>
+                            </li>
+                            <li class="dropdown-items-list">
+                                <a class="dropdown-link"href="">
+                                    <span>Changelog</span>
+                                    <span>See whats's new</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <!--navbar search form-->
+                <div class="navbar-search">
+                    <form class="search-form" action="">
+                        <span class="search-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input class="search-field" type="search" placeholder="Search Courses" title="Search for:">
+                    </form>
+                </div>
+                
+
+                <!--navbar sign in button link-->
+                <div class="navbar-sign-in">
+                    <span class="sign-in">
+                        <a href="" class="sign-in-link" >Sign In</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content-page">
+        <div class="content-container">
+            <div class="content-first">
+                <div class="content-first-items">
+                    <div class="first-description">
+                        <h1 class="heading">
+                            Welcome to Geeks UI Learning Application
+                        </h1>
+                        <p class="text">
+                            Hand-picked Instrutor and expertly crafted courses, designed for the modern students and entrepreneur
+                        </p>
+                    
+                        <div>
+                            <div class="first-description-links">
+                                <a class="first-link" href="">
+                                    <span>Browse Courses</span>
+                                </a>
+                            </div>
+                            
+                            <div class="first-description-links">
+                                <a class="second-link" href="">
+                                    <span>Are You Instructor?</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="first-image">
+                        <img src="https://geeks.madrasthemes.com/wp-content/uploads/2021/09/hero-img.png" alt="Geeks" >
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-second">
+                <div class="content-second-wrapper">
+                    <div class="content-second-item">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                        <div class="descrip-container">
+                            <h4>
+                                30,000 online courses
+                            </h4>
+                            <p>
+                                Enjoy a variety of fresh topics
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-second-item">
+                        <div class="icon-container">
+                            <i class="fa-solid fa-user-group"></i>
+                        </div>
+                        <div class="descrip-container">
+                            <h4>
+                                Expert instruction
+                            </h4>
+                            <p>
+                                Find the right instructor for you
+                            </p>
+                        </div>
+                    </div>
+                    <div class="content-second-item">
+                        <div class="icon-container">
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div class="descrip-container">
+                            <h4>
+                                Lifetime access
+                            </h4>
+                            <p>
+                                Learn on your schedule
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+            
+            <section>
+                <div class="content-third">
+                    <div class="section">
+                        <div class="section-heading">
+                            <h2>Recommended to you</h2>
+                        </div>
+                        <div class="section-cards">
+                            <div class="card card-1">
+                                <div class="card-link">
+                                    <a href="https://geeks.madrasthemes.com/blog/courses/how-to-easily-create-a-website-with-react/">
+                                        <img 
+                                            src="https://geeks.madrasthemes.com/wp-content/uploads/2021/09/course-react.jpg" />
+                                    </a>
+                                </div>
+                
+                                <div class="card-body">
+                                    <a href="#"><h4>How to easily create a website with React</h4></a>
+                                    <ul>
+                                        <li>
+                                            <i class="fa-regular fa-clock"></i>
+                                            <span>3 hours 56 minutes</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-signal"></i>
+                                            <span>Beginner</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                
+                            </div>
+                
+                            <div class="card card-2">
+                                <div class="card-link">
+                                    <a href="https://geeks.madrasthemes.com/blog/courses/how-to-easily-create-a-website-with-react/">
+                                        <img 
+                                            src="https://geeks.madrasthemes.com/wp-content/uploads/2021/09/course-graphql.jpg" />
+                                    </a>
+                                    <div class="card-body">
+                                        <h4>How to easily create a website with React</h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa-regular fa-clock"></i>
+                                                <span>3 hours 56 minutes</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-signal"></i>
+                                                <span>Beginner</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card card-3">
+                                <div class="card-link">
+                                    <a href="https://geeks.madrasthemes.com/blog/courses/how-to-easily-create-a-website-with-react/">
+                                        <img
+                                            src="https://geeks.madrasthemes.com/wp-content/uploads/2021/09/course-angular.jpg" />
+                                    </a>
+                                    <div class="card-body">
+                                        <h4>How to easily create a website with React</h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa-regular fa-clock"></i>
+                                                <span>3 hours 56 minutes</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-signal"></i>
+                                                <span>Beginner</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card card-4">
+                                <div class="card-link">
+                                    <a href="https://geeks.madrasthemes.com/blog/courses/how-to-easily-create-a-website-with-react/">
+                                        <img 
+                                            src="https://geeks.madrasthemes.com/wp-content/uploads/2021/09/course-python.jpg" />
+                                    </a>
+                                    <div class="card-body">
+                                        <h4>How to easily create a website with React</h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa-regular fa-clock"></i>
+                                                <span>3 hours 56 minutes</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-signal"></i>
+                                                <span>Beginner</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="section">
+                        <div class="section-heading">
+                            <h2>Most Popular</h2>
+                        </div>
+                        <div class="section-cards">
+                            <div class="card card-1">
+                                <div class="card-link">
+                                    <a href="https://geeks.madrasthemes.com/blog/courses/how-to-easily-create-a-website-with-react/">
+                                        <img 
+                                            src="https://geeks.madrasthemes.com/wp-content/uploads/2021/09/course-javascript.jpg" />
+                                    </a>
+                                </div>
+                
+                                <div class="card-body">
+                                    <h4>How to easily create a website with React</h4>
+                                    <ul>
+                                        <li>
+                                            <i class="fa-regular fa-clock"></i>
+                                            <span>3 hours 56 minutes</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-signal"></i>
+                                            <span>Beginner</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                
+                            </div>
+                
+                            <div class="card card-2">
+                                <div class="card-link">
+                                    <a href="https://geeks.madrasthemes.com/blog/courses/how-to-easily-create-a-website-with-react/">
+                                        <img 
+                                            src="https://geeks.madrasthemes.com/wp-content/uploads/2021/09/course-wordpress.jpg" />
+                                    </a>
+                                    <div class="card-body">
+                                        <h4>How to easily create a website with React</h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa-regular fa-clock"></i>
+                                                <span>3 hours 56 minutes</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-signal"></i>
+                                                <span>Beginner</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card card-3">
+                                <div class="card-link">
+                                    <a href="https://geeks.madrasthemes.com/blog/courses/how-to-easily-create-a-website-with-react/">
+                                        <img 
+                                            src="https://geeks.madrasthemes.com/wp-content/uploads/2021/09/course-css.jpg" />
+                                    </a>
+                                    <div class="card-body">
+                                        <h4>How to easily create a website with React</h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa-regular fa-clock"></i>
+                                                <span>3 hours 56 minutes</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-signal"></i>
+                                                <span>Beginner</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="card card-4">
+                                <div class="card-link">
+                                    <a href="https://geeks.madrasthemes.com/blog/courses/how-to-easily-create-a-website-with-react/">
+                                        <img 
+                                            src="https://geeks.madrasthemes.com/wp-content/uploads/2021/09/course-gatsby.jpg" />
+                                    </a>
+                                    <div class="card-body">
+                                        <h4>How to easily create a website with React</h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa-regular fa-clock"></i>
+                                                <span>3 hours 56 minutes</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-signal"></i>
+                                                <span>Beginner</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="section">
+                        <div class="section-heading">
+                            <h2>Trending</h2>
+                        </div>
+                        <div class="section-cards">
+                            <div class="card card-1">
+                                <div class="card-link">
+                                    <a href="https://geeks.madrasthemes.com/blog/courses/how-to-easily-create-a-website-with-react/">
+                                        <img 
+                                            src="https://geeks.madrasthemes.com/wp-content/uploads/2021/09/course-react.jpg" />
+                                    </a>
+                                </div>
+                    
+                                <div class="card-body">
+                                    <h4>How to easily create a website with React</h4>
+                                    <ul>
+                                        <li>
+                                            <i class="fa-regular fa-clock"></i>
+                                            <span>3 hours 56 minutes</span>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-signal"></i>
+                                            <span>Beginner</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                    
+                            </div>
+                    
+                            <div class="card card-2">
+                                <div class="card-link">
+                                    <a href="https://geeks.madrasthemes.com/blog/courses/how-to-easily-create-a-website-with-react/">
+                                        <img 
+                                            src="https://geeks.madrasthemes.com/wp-content/uploads/2021/09/course-graphql.jpg" />
+                                    </a>
+                                    <div class="card-body">
+                                        <h4>How to easily create a website with React</h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa-regular fa-clock"></i>
+                                                <span>3 hours 56 minutes</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-signal"></i>
+                                                <span>Beginner</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="card card-3">
+                                <div class="card-link">
+                                    <a href="https://geeks.madrasthemes.com/blog/courses/how-to-easily-create-a-website-with-react/">
+                                        <img 
+                                            src="https://geeks.madrasthemes.com/wp-content/uploads/2021/09/course-angular.jpg" />
+                                    </a>
+                                    <div class="card-body">
+                                        <h4>How to easily create a website with React</h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa-regular fa-clock"></i>
+                                                <span>3 hours 56 minutes</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-signal"></i>
+                                                <span>Beginner</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="card card-4">
+                                <div class="card-link">
+                                    <a href="https://geeks.madrasthemes.com/blog/courses/how-to-easily-create-a-website-with-react/">
+                                        <img 
+                                            src="https://geeks.madrasthemes.com/wp-content/uploads/2021/09/course-python.jpg" />
+                                    </a>
+                                    <div class="card-body">
+                                        <h4>How to easily create a website with React</h4>
+                                        <ul>
+                                            <li>
+                                                <i class="fa-regular fa-clock"></i>
+                                                <span>3 hours 56 minutes</span>
+                                            </li>
+                                            <li>
+                                                <i class="fa-solid fa-signal"></i>
+                                                <span>Beginner</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <div class="website-footer">
+                <div class="footer-text">
+                    <span>© 2023 Geeks. All Rights Reserved</span>
+                </div>
+                <div>
+                    <ul class="footer-links">
+                        <li><a href=""><span>About</span></a></li>
+                        <li><a href=""><span>Terms & Conditions</span></a></li>
+                        <li><a href=""><span>Privacy Policy</span></a></li>
+                        <li><a href=""><span>Contact</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
