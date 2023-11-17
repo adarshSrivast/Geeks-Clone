@@ -10,7 +10,7 @@
 }
 
 a:hover{
-    color: #754ffe !important;
+    color: #754ffe;
 }
 
 .navbar{
@@ -183,7 +183,6 @@ hr{
     font-weight: 600;
     color: #000;
     user-select: none;
-    cursor: pointer;
     border: 1px solid transparent;
     padding: 12px 20px;
     font-size: 14px;
@@ -193,15 +192,9 @@ hr{
 }
 
 .sign-in-link:hover{
-    color: #000 !important;
+    color: #000;
 }
 
-
-
-
-.content-first{
-    background-color: #754FFE;
-}
 
 .content-first-items{
     margin-right: auto;
@@ -209,6 +202,7 @@ hr{
     padding: 0px 12px;
     display: flex;
     align-items: center;
+    background-color: #754FFE;
 }
 
 
@@ -218,10 +212,10 @@ hr{
 }
 
 .heading{
-    color: rgb(255,255,255) !important;
+    color: rgb(255,255,255);
     line-height: 1.3;
     font-weight: 700;
-    letter-spacing: -1px;
+    /* letter-spacing: -1px; */
     margin-bottom: 8px;
 }
 
@@ -229,7 +223,7 @@ hr{
     color: rgba(255,255,255,0.5);
     margin-bottom: 16px;
     font-size: 18px;
-    letter-spacing: -0.2px;
+    /* letter-spacing: -0.2px; */
 }
 
 .first-description-links{
@@ -241,7 +235,6 @@ hr{
 .first-description-links a{
     display: inline-block;
     font-weight: 600;
-    cursor: pointer;
     user-select: none;
     border: 1px solid transparent;
     padding: 12px 20px;
@@ -252,25 +245,23 @@ hr{
 .first-description-links .first-link{
     color: #fff;
     background-color: #19cb98;
-    border-color: #19cb98;
 }
 .first-description-links .first-link:hover{
-    color: #fff !important;
+    color: #fff;
     background-color: #17b488;
 }
 
 .first-description-links .second-link{
     color: #000;
     background-color: #f5f4f8;
-    border-color: #f5f4f8;
 }
 
 .first-description-links .second-link:hover{
-    color: #000 !important;
+    color: #000;
 }
 
 .first-image{
-    display: flex;
+    line-height: 0;
 }
 
 .first-image img{
@@ -317,22 +308,19 @@ hr{
 .content-third{
     width: 100%;
     padding: 0px 12px;
-    display: flex;
-    flex-direction: column;
 }
 
 section{
-    width: 100%;
+    background-color: rgb(245, 244, 248);
     display: flex;
     justify-content: center;
-    background-color: rgb(245, 244, 248) !important;
 }
 
-.section{
+.cards-section{
     padding-bottom: 32px;
 }
 
-.section:first-child{
+.cards-section:first-child{
     width: 100%;
     padding-top: 52px;
 }
@@ -346,7 +334,6 @@ section{
 }
 
 .card{
-    padding-right: 20px;
     margin-right: 20px;
     margin-bottom: 24px;
     border-radius: 8px;
@@ -399,10 +386,7 @@ section{
     font-size: 12px;
     line-height: 24px;
     color: #5c5776;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px 12px;
 }
 
 .footer-text{
@@ -416,6 +400,75 @@ section{
 .footer-links span{
     padding: 4px 16px;
 }
+
+
+
+
+/* Search css */
+
+.search-container{
+    background-color: #f5f4f8;
+    display: none;
+}
+
+
+
+.search-result {
+    background-color: #754FFE;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+
+.search-result p {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+}
+
+
+.search-content{
+    max-width: 1024px;
+}
+
+.display-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+.display-options p{
+    font-weight: 700;
+}
+
+.result-display-options {
+    display: flex;
+}
+
+.display-filter select{
+    padding: 10px 0px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.result-content{
+    display: flex;
+}
+
+.filter-courses {
+    min-width: 240px;
+    background-color: #fff;
+}
+
+.result-display{
+    display: flex;
+}
+
+
 
 
 @media (min-width:320px) {
@@ -459,7 +512,6 @@ section{
 
     .card{
         width: 100%;
-        padding-right: 0px;
     }
 
     .card-body ul{
@@ -527,6 +579,7 @@ section{
 
     .card-2{
         display: block;
+        margin-right: 0px;
     }
 
     .website-footer{
@@ -557,7 +610,6 @@ section{
     }
 
     .content-first-items{
-        max-width: 840px;
         flex-direction: row;
         justify-content: center;
     }
@@ -593,6 +645,7 @@ section{
 
     .card{
         display: block;
+        margin-right: 20px;
     }
 
     .card-body{
@@ -621,10 +674,6 @@ section{
 }
 
 @media(min-width:1082px){
-    .content-first-items{
-        max-width: 1000px;
-    }
-
     .first-description{
         max-width: 460px;
     }
